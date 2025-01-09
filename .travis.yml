@@ -1,0 +1,11 @@
+language: generic
+
+sudo: required
+dist: trusty
+
+services:
+  - docker
+
+install:
+  - cd docker && docker build -t vpnserver .
+
